@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dnsoft.bootcrm.core.dao.BaseDictDao" >
+<!--查询部分开始-->
+    <!-- 根据类别代码查询 -->
+    <select id="selectBaseDictByTypeCode" parameterType="String" resultType="baseDict">
+        select *
+        from base_dict
+        where dict_type_code = #{typecode}
+    </select>
+
+    <!--筛选出类别名称里不同的值用于显示在下拉框中-->
+    <!--去重复值-->
+    <select id="selectBaseDictByTypeName" parameterType="String" resultType="baseDict">
+        select * from base_dict where dict_enable=1 group by dict_type_name
+    </select>
+    <!--查询所有内容并将项目名称做一个集合-->
+    <select id="selectBaseDictByItemName" parameterType="String" resultType="baseDict">
+        select * from base_dict
+    </select>
+
+
+    <!--条件查询    -->
+    <sql id="selectBaseDictListWhere">
+            <if test="dict_type_name !=null">
+               and dict_type_name=#{dict_type_name}
+            </if>
+            <if test="dict_item_name != null" >
+            and  dict_item_name=#{dict_item_name}
+            </if>
+    </sql>
+
+    <!--显示数据字典表状态为1的所有内容-->
+    <select id="findBaseDictALL" parameterType="String" resultType="baseDict">
+        select dict_id,dict_type_code,dict_type_name,dict_item_name,dict_sort,dict_enable from base_dict where dict_enable=1
+        <!--条件查询-->
+        <include refid="selectBaseDictListWhere"/>
+        <!-- 执行分页查询 -->
+        <if test="start !=null and rows != null">
+            limit #{start},#{rows}
+        </if>
+    </select>
+
+
+    <!--查询数据字典表中状态值为1的数据,页面的统计-->
+    <select id="findCount" parameterType="String" resultType="Integer">
+        select count(*) from base_dict where dict_enable='1'      <!--因为执行了假删除，此处执行的应为能看到(状态为1)的数据-->
+    </select>
+
+   <!--由于表中主键dict_id的类型不能自增长，因此先找出主键最大值然后进行+1操作-->
+    <select id="dict_Max" parameterType="Integer" resultType="Integer">
+        select max(cast(dict_id as signed int)) from base_dict
+    </select>
+
+<!--查询部分结束-->
+
+    <!--添加操作-->
+    <insert id="addBaseDict" parameterType="baseDict">
+        insert into base_dict(dict_id,dict_type_code,dict_type_name,dict_item_name,dict_sort,dict_enable)
+        values(#{dict_id},#{dict_type_code},#{dict_type_name},#{dict_item_name},#{dict_sort},#{dict_enable})
+    </insert>
+
+    <!--修改数据时先获取其id再执行-->
+    <select id="findBaseDictById" parameterType="Integer" resultType="baseDict">
+        select * from base_dict where dict_id=#{dict_id}
+    </select>
+    <!--执行修改的操作-->
+    <update id="updateBaseDict" parameterType="baseDict">
+         update base_dict
+         <set>
+             <if test="dict_type_code!=null">
+                 dict_type_code=#{dict_type_code},
+             </if>
+             <if test="dict_type_name!=null">
+                 dict_type_name=#{dict_type_name},
+             </if>
+             <if test="dict_item_name!=null">
+                 dict_item_name=#{dict_item_name},
+             </if>
+             <if test="dict_sort!=null">
+                 dict_sort=#{dict_sort},
+             </if>
+             <if test="dict_enable!=null">
+                 dict_enable=#{dict_enable},
+             </if>
+
+         </set>
+        where dict_id=#{dict_id}
+    </update>
+
+    <!--逻辑删除(假删除)！！！基础数据不对其删除，只将其隐藏不显示。即将状态值改为0-->
+    <update id="deleteBaseDict" parameterType="baseDict">
+        update base_dict set dict_enable=#{dict_enable} where dict_id=#{dict_id}
+    </update>
+</mapper>
