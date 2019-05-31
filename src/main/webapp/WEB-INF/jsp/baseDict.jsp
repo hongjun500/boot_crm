@@ -97,7 +97,7 @@
                     <div class="form-group">
                         <label for="dict_itemName">项目名称</label>
                         <select class="form-control" id="dict_itemName" name="dict_item_name">
-                            <option value="" >--请选择--</option>
+                            <option value="">--请选择--</option>
 
                         </select>
                     </div>

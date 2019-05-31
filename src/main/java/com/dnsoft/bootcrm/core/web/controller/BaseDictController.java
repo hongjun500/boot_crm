@@ -58,7 +58,7 @@ public class BaseDictController {
             }
         }
 
-        //将以上对照存储的值转换成一个json数组并进行拼接；例如:[   {  "dict_type_name": "客户级别","dict_item_list":[{"dict_item":"普通客户"},{"dict_item":"vip客户"}]  },{  {"客户信息来源","dict_item_list:"[{"dict_item":"电话营销"},{"dict_item":"网络营销"}]  }]
+        //将以上对照存储的值转换成一个json数组并进行拼接；例如:[   {  dict_type_name: "客户级别",dict_item_list:[{dict_item:"普通客户"},{dict_item:"vip客户"}]  },{  {dict_type_name:"客户信息来源",dict_item_list:[{dict_item:"电话营销"},{dict_item:"网络营销"}]  }]
         String data="[";
         //对集合进行遍历
         List<BaseDict> list=baseDictTypeName;  //将一级目录查询到的数据转换成集合的形式

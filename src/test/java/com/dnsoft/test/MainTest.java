@@ -6,6 +6,7 @@ import com.dnsoft.bootcrm.core.pojo.BaseDict;
 import com.dnsoft.bootcrm.core.pojo.User;
 import com.dnsoft.bootcrm.core.service.BaseDictService;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,18 +26,21 @@ public class MainTest {
     private BaseDictService baseDictService;
 
     @Test
+    @Ignore
     public void TestUserDao(){
         User user=userDao.findUser("admin","123456");
         Assert.assertEquals("畢先生",user.getUser_name());
 
     }
     @Test
+    @Ignore
     public void TestBaseDict(){
         BaseDict baseDict=new BaseDict();
         Assert.assertNotNull(baseDict);
     }
 
     @Test
+
     public void TestBaseDictService(){
         List<BaseDict> baseDictList=baseDictService.findBaseDictByTypeCode("001");
         Assert.assertEquals("客户行业",baseDictList.get(2).getDict_type_name());
@@ -44,6 +48,7 @@ public class MainTest {
     }
 
     @Test
+    @Ignore
     public void TestBaseDict(BaseDict baseDict) {
         BaseDict baseDict1 = new BaseDict();
         int dict_ID = baseDictService.dict_Max() + 1;

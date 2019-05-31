@@ -17,29 +17,29 @@
           <element id="dir-copy" path="$PROJECT_DIR$/out/production/resources" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Gradle: org.apache.commons:commons-dbcp2:2.1.1" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-jdbc:4.3.12.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-tx:4.3.12.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:4.3.6.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-web:4.3.6.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.3.12.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.3.12.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.3.12.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.3.12.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.3.12.RELEASE" />
-          <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
-          <element id="library" level="project" name="Gradle: org.mybatis:mybatis:3.4.5" />
-          <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:5.1.8" />
-          <element id="library" level="project" name="Gradle: org.apache.logging.log4j:log4j-core:2.10.0" />
-          <element id="library" level="project" name="Gradle: org.apache.logging.log4j:log4j-api:2.10.0" />
-          <element id="library" level="project" name="Gradle: org.mybatis:mybatis-spring:1.3.1" />
-          <element id="library" level="project" name="Gradle: javax.servlet.jsp.jstl:jstl:1.2" />
-          <element id="library" level="project" name="Gradle: org.apache.taglibs:taglibs-standard-impl:1.2.5" />
-          <element id="library" level="project" name="Gradle: org.apache.commons:commons-lang3:3.4" />
-          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.9.6" />
-          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.6" />
-          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.6" />
-          <element id="library" level="project" name="Gradle: org.apache.commons:commons-pool2:2.4.2" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/org.apache.commons/commons-dbcp2/2.1.1/c4f4a76171671ccf293be8995a498eab7fa8ed24/commons-dbcp2-2.1.1.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.3.12.RELEASE/5c840abbdc1a1dfd0f79c4a4c25eac0c98e6af22/spring-jdbc-4.3.12.RELEASE.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/org.springframework/spring-tx/4.3.12.RELEASE/7147b6839b2bf9db3621b79c73b4dddbe69572b6/spring-tx-4.3.12.RELEASE.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.6.RELEASE/ea55690d6d61ad70e2569db1e1add1603e427862/spring-webmvc-4.3.6.RELEASE.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.6.RELEASE/8b8bf8fc6ed4acd5ae0baa6179f1cccc52aaa9aa/spring-web-4.3.6.RELEASE.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.12.RELEASE/5e6d26f36636f36b7efec1d6a0c5991284fbd95b/spring-context-4.3.12.RELEASE.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/org.springframework/spring-aop/4.3.12.RELEASE/b3fef085902993c2ef874c45c7bfd79296d5a5a4/spring-aop-4.3.12.RELEASE.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.12.RELEASE/547dd432d47d0f01d9ccbedc4b705f9f7c1240a/spring-beans-4.3.12.RELEASE.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/org.springframework/spring-expression/4.3.12.RELEASE/790f69f6ad7f9da8d4a92c603ad7244c398c8309/spring-expression-4.3.12.RELEASE.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.12.RELEASE/4cebc69478c6d350dbd5af28e3db7d5694f416e3/spring-core-4.3.12.RELEASE.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/org.mybatis/mybatis/3.4.5/5200759b13f70652995fd206a52fdc98b01c65cd/mybatis-3.4.5.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.8/ca016d1d4f48d7aa2b6ea75639d53b124ad189a8/mysql-connector-java-5.1.8.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.10.0/c90b597163cd28ab6d9687edd53db601b6ea75a1/log4j-core-2.10.0.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.10.0/fec5797a55b786184a537abd39c3fa1449d752d6/log4j-api-2.10.0.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/org.mybatis/mybatis-spring/1.3.1/5197169e15a43066f177a1cd12a098e1283fdc76/mybatis-spring-1.3.1.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/org.apache.taglibs/taglibs-standard-impl/1.2.5/9b9783ccb2a323383e6e20e36d368f8997b71967/taglibs-standard-impl-1.2.5.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.4/5fe28b9518e58819180a43a850fbc0dd24b7c050/commons-lang3-3.4.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.6/cfa4f316351a91bfd95cb0644c6a2c95f52db1fc/jackson-databind-2.9.6.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.6/6a0f0f154edaba00067772ce02e24f8c0973d84c/jackson-annotations-2.9.6.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.6/4e393793c37c77e042ccc7be5a914ae39251b365/jackson-core-2.9.6.jar" />
+          <element id="file-copy" path="C:/gradle-4.6/caches/modules-2/files-2.1/org.apache.commons/commons-pool2/2.4.2/e5f4f28f19d57716fbc3989d7a357ebf1e454fea/commons-pool2-2.4.2.jar" />
         </element>
       </element>
     </root>
